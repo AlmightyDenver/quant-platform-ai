@@ -55,19 +55,20 @@ python crawling/sp500_scraper.py
 5. 실행 화면 (예정)
 추후: S&P 500 종목 정보 표, 시가총액 순 정렬된 출력 예시 등 포함 예정
 
-6. 프로젝트 구조 📁
+# 6. 프로젝트 구조 📁
 bash
-복사
-편집
 quantly-platform-ai/
 ├── crawling/
-│   └── sp500_scraper.py     # 크롤링 메인 모듈
+│   └── crawling_sp500.py     # 크롤링 메인 모듈
+│   └── crawling_nasdaq.py     # 크롤링 메인 모듈
+│   └── column_utils.py     # 크롤링 메인 모듈
 ├── requirements.txt         # 의존성 파일
 └── README.md
-7. 라이선스
+
+# 7. 라이선스
 MIT License
 
-8. 진행 상태 및 TODO
+# 8. 진행 상태 및 TODO
 기능 항목	상태
 S&P 500 종목 크롤링	✅ 완료
 크롤링 결과 CSV 저장	✅ 완료
@@ -76,11 +77,8 @@ S&P 500 종목 크롤링	✅ 완료
 시계열 수집 (가격/배당 등)	⏳ 예정
 분석/시각화 연동	⏳ 예정
 
-9. 참고한 오픈소스
-데이터 크롤링: BeautifulSoup + pandas 활용 예제 기반
+# 9. 참고한 오픈소스
 
-향후 통합될 분석/로그인 기능은 다음 저장소를 참고하여 개발됩니다:
-🔗 https://github.com/GreatLaboratory/SpringBoot_Security_Login
 
 10. 진행 현황 🧪
 Progress: 🟩⬜⬜⬜⬜⬜⬜⬜⬜ 10%
