@@ -52,6 +52,10 @@ pip install -r requirements.txt
 
 # 크롤링 실행
 python crawling/sp500_scraper.py
+
+```
+
+
 5. 실행 화면 (예정)
 추후: S&P 500 종목 정보 표, 시가총액 순 정렬된 출력 예시 등 포함 예정
 
