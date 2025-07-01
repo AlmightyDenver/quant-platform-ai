@@ -1,5 +1,8 @@
-# column_utils.py
-
+# -*- coding: utf-8 -*-
+"""
+Filename : column_utils.py
+Description: Convert column name as snake_case format.
+"""
 import re
 import pandas as pd
 

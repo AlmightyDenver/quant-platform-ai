@@ -1,3 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Filename: crawl_nasdaq.py
+
+Description:
+    This script crawls NASDAQ-100 company data from financhle.com,
+    specifically from the table on the 'nasdaq100 companies by weight' page.
+    The table includes the following columns:
+        - % of Nasdaq 100
+        - # of Shares Held
+        - Market Cap ($)
+        - Price
+        - Today's Change ($)
+        - Today's Change (%)
+        - YTD Change (%)
+
+Features:
+    - Scrape the NASDAQ-100 weights table from Financhle.com
+    - Save as CSV file
+
+Data sources:
+    - financhle.com (for index weight table)
+
+Author: DenverAlmighty
+Date: 2025-06-30
+"""
+
+
+
+
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 import pandas as pd

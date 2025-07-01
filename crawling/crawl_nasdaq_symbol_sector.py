@@ -1,3 +1,21 @@
+# -*- coding: utf-8 -*-
+"""
+Filename: crawl_nasdaq_symbol_sector.py
+
+Description:
+    This script crawls NASDAQ-100 company data(Symbol, Sector) from wikipedia
+
+Features:
+    - Scrape the Symbol-Sector table from wikipedia
+    - Save as CSV file
+
+Data sources:
+    - wikipedia
+
+Author: DenverAlmighty
+Date: 2025-06-30
+"""
+
 import pandas as pd
 from datetime import datetime
 import ssl 
@@ -43,6 +61,6 @@ def get_nasdaq_100_symbols_and_sectors():
 if __name__ == "__main__":
     df = get_nasdaq_100_symbols_and_sectors()
     print(df)
-    filename = f"nasdaq_100_symbols_{datetime.now().strftime('%Y%m%d')}.csv"
+    filename = f"nq_symbols_sector{datetime.now().strftime('%Y%m%d')}.csv"
     # df.to_csv(filename, index=False)
     print(f"[✓] Saved NASDAQ-100 list to {filename}")
